@@ -1,0 +1,596 @@
+/* --- Base Styles for Project Glass Components --- */
+.project-glass-img-wrap,
+.project-glass-card {
+  box-sizing: border-box;
+  max-width: 420px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 18px;
+}
+
+.project-glass-img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  max-height: 480px;
+  height: auto;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+/* --- Arrow Navigation Styles --- */
+.projects-arrow-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  z-index: 10;
+  background: transparent;
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.projects-arrow-btn {
+  font-size: 2rem;
+  background: rgba(255,255,255,0.7);
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: 0 2px 8px #eee;
+  color: #ab0d26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s, background 0.2s;
+  z-index: 21;
+  position: relative;
+}
+
+.projects-arrow-btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.projects-arrow-btn:not(.disabled) {
+  cursor: pointer;
+}
+
+/* --- Dots Indicator Styles --- */
+.projects-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
+.projects-dot {
+  margin-top: 1rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  border: #ab0d26 1px solid;
+  opacity: 0.5;
+  transition: background 0.2s, opacity 0.2s, width 0.2s, height 0.2s;
+  display: inline-block;
+}
+
+.projects-dot.active {
+  background: #ab0d26;
+  opacity: 1;
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+/* --- Animation for Project Card Switch --- */
+.project-glass-row-anim {
+  animation: projectGlassFadeSlide 0.4s cubic-bezier(.4,2,.3,1);
+}
+
+@keyframes projectGlassFadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* --- Glassmorphic Project Card Layout --- */
+.project-glass-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  max-width: 900px;
+  margin: 3rem auto 0 auto;
+  position: relative;
+}
+
+.project-glass-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 420px;
+  height: 420px;
+  min-width: 420px;
+  max-width: 420px;
+  border-radius: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.project-glass-img {
+  display: block;
+  width: 420px;
+  height: 420px;
+  border-radius: 40px;
+  box-shadow: 0 8px 32px #e0d7ff44, 0 2px 8px #eee;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.project-glass-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px #e0d7ff33, 0 4px 16px #eee;
+  padding: 2.2rem 2.2rem 2rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+  text-align: left;
+  min-width: 400px;
+  max-width: 450px;
+  position: relative;
+  font-family: 'Sora', sans-serif;
+  margin-left: -60px;
+  z-index: 2;
+}
+
+.project-glass-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.project-glass-subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.7rem;
+  text-align: left;
+}
+
+.project-glass-desc {
+  font-size: 0.98rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* --- Projects Section --- */
+.projects-section {
+  padding: 3rem 0;
+  background: #fff;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.projects-title {
+  font-family: 'Sora', sans-serif;
+  color: #ab0d26;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.projects-stack-vertical {
+  position: relative;
+  width: 100vw;
+  max-width: 1200px;
+  min-height: 340px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.project-stack-card {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 98vw;
+  max-width: 1100px;
+  min-height: 340px;
+  background: linear-gradient(135deg, #fff 60%, #ffe3e8 100%);
+  border-radius: 32px;
+  box-shadow: 0 12px 40px #ffe3e8, 0 4px 16px #eee;
+  padding: 3.5rem 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(60px) scale(0.97);
+  z-index: 1;
+  transition: all 0.6s cubic-bezier(.4,2,.3,1);
+  pointer-events: none;
+}
+
+.project-stack-card.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.project-stack-card.below {
+  opacity: 0.7;
+  transform: translateY(-30px) scale(0.95);
+  z-index: 2;
+}
+
+.project-stack-card.next {
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+  z-index: 1;
+}
+
+.project-stack-card.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.project-row-split {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.project-desc-left {
+  flex: 2 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(249,246,247,0.7);
+  border-radius: 24px;
+  box-shadow: 0 2px 8px #eee;
+  padding: 2.5rem 2rem;
+  min-width: 220px;
+  margin-right: 2.5rem;
+}
+
+.project-desc-left p {
+  color: #ab0d26;
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.project-card-right {
+  flex: 1 1 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  height: 100%;
+}
+
+.project-card-content.big {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  min-height: 220px;
+  background: none;
+  border-radius: 18px;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  margin: 0;
+  box-shadow: none;
+  display: block;
+}
+
+.project-card-content.big h3 {
+  display: none;
+}
+
+.project-card-content h3 {
+  font-size: 1.2rem;
+  color: #ab0d26;
+  margin-bottom: 0.7rem;
+}
+
+.project-card-content p {
+  color: #222;
+  font-size: 1rem;
+}
+
+/* --- Responsive Styles --- */
+@media (min-width: 901px) {
+  .project-glass-img-wrap {
+    width: 420px;
+    height: 420px;
+    min-width: 420px;
+    max-width: 420px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  
+  .project-glass-img {
+    width: 420px;
+    height: 420px;
+    border-radius: 40px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+  
+  .project-glass-card {
+    min-width: 400px;
+    max-width: 450px;
+    margin-left: -60px;
+    background: rgba(255,255,255,0.95);
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  .project-glass-row {
+    max-width: 95vw;
+  }
+  
+  .project-glass-img-wrap {
+    width: 400px;
+    height: 400px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+  
+  .project-glass-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 35px;
+  }
+  
+  .project-glass-card {
+    min-width: 380px;
+    max-width: 420px;
+    margin-left: -60px;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-arrow-nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  
+  .project-glass-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    max-width: 95vw;
+    justify-content: center;
+  }
+  
+  .project-glass-img-wrap {
+    width: 350px;
+    height: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    z-index: 1;
+  }
+  
+  .project-glass-img {
+    display: block;
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 0 8px 32px #e0d7ff44, 0 2px 8px #eee;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    background: #f6f6fa;
+  }
+  
+  .project-glass-card {
+    min-width: 300px;
+    max-width: 380px;
+    margin-left: -60px;
+    margin-right: 0;
+    margin-top: 0;
+    box-shadow: 0 8px 32px #e0d7ff33, 0 4px 16px #eee;
+    font-size: 0.95rem;
+    border-radius: 18px;
+    padding: 2rem 2rem 1.8rem 2rem;
+    background: rgba(255,255,255,0.95);
+    z-index: 2;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-arrow-nav {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    max-width: 95vw;
+  }
+  
+  .project-glass-row {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    max-width: 95vw !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+  }
+  
+  .project-glass-img-wrap {
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    order: 1 !important;
+    justify-content: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .project-glass-img {
+    width: 100% !important;
+    max-width: 85vw !important;
+    height: auto !important;
+    min-height: 200px !important;
+    max-height: 280px !important;
+    border-radius: 18px !important;
+    display: block !important;
+    object-fit: cover !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .project-glass-card {
+    order: 2 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 1.8rem 1.5rem 1.6rem 1.5rem !important;
+    border-radius: 18px !important;
+    background: rgba(255,255,255,0.95) !important;
+    z-index: 2 !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.9rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .project-glass-title,
+  .project-glass-subtitle,
+  .project-glass-desc {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 1.2rem 0;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  .projects-arrow-nav {
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .projects-dot.active {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .project-glass-row {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    max-width: 95vw !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+  }
+  
+  .project-glass-img-wrap {
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    order: 1 !important;
+    justify-content: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .project-glass-img {
+    width: 100% !important;
+    max-width: 85vw !important;
+    height: auto !important;
+    min-height: 200px !important;
+    max-height: 280px !important;
+    border-radius: 18px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
+  
+  .project-glass-card {
+    order: 2 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 1.8rem 1.2rem !important;
+    background: rgba(255,255,255,0.95) !important;
+    border-radius: 18px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .project-glass-title,
+  .project-glass-subtitle,
+  .project-glass-desc {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+

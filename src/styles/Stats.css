@@ -1,0 +1,63 @@
+.stats-section {
+  padding: 2rem 1.5rem;
+  background: linear-gradient(to bottom, #f3e2ea 30%, #fff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.stats-glass-bg {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(rgba(185, 39, 61, 0.827), rgba(185, 39, 61, 0.712)), url('../assets/red.png') center/cover no-repeat;
+  border-radius: 2rem;
+  border-top-left-radius: 0;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.stats-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1 1 180px;
+  min-width: 160px;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  box-shadow: none;
+  padding: 0 0.5rem;
+}
+
+.stat-icon {
+  font-size: 2.1rem;
+  margin-bottom: 0.7rem;
+  color: #fff;
+}
+
+.stat-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #fff;
+  opacity: 0.95;
+}

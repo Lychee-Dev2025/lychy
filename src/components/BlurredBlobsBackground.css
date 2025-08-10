@@ -1,0 +1,84 @@
+.blobs-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  /* No border-radius, no overflow */
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.45;
+  mix-blend-mode: lighten;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.blob1 {
+  width: 32vw;
+  height: 32vw;
+  min-width: 320px;
+  min-height: 320px;
+  background: #ab0d26;
+  left: -10vw;
+  top: -8vw;
+  animation-name: blob1move;
+}
+
+.blob2 {
+  width: 28vw;
+  height: 28vw;
+  min-width: 260px;
+  min-height: 260px;
+  background: #ec2f55;
+  right: -12vw;
+  top: 10vw;
+  animation-name: blob2move;
+  animation-delay: 2s;
+}
+
+.blob3 {
+  width: 22vw;
+  height: 22vw;
+  min-width: 180px;
+  min-height: 180px;
+  background: #b3253b;
+  left: 20vw;
+  bottom: -8vw;
+  animation-name: blob3move;
+  animation-delay: 4s;
+}
+
+.blob4 {
+  width: 18vw;
+  height: 18vw;
+  min-width: 120px;
+  min-height: 120px;
+  background: #f9b6b6;
+  right: 10vw;
+  bottom: -6vw;
+  animation-name: blob4move;
+  animation-delay: 1s;
+}
+
+@keyframes blob1move {
+  0%, 100% { left: -10vw; top: -8vw; }
+  50% { left: 8vw; top: 2vw; }
+}
+@keyframes blob2move {
+  0%, 100% { right: -12vw; top: 10vw; }
+  50% { right: 2vw; top: 0vw; }
+}
+@keyframes blob3move {
+  0%, 100% { left: 20vw; bottom: -8vw; }
+  50% { left: 10vw; bottom: 8vw; }
+}
+@keyframes blob4move {
+  0%, 100% { right: 10vw; bottom: -6vw; }
+  50% { right: 0vw; bottom: 10vw; }
+} 

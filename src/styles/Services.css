@@ -1,0 +1,105 @@
+.service-card:hover {
+  background: #ab0d26;
+  color: #fff;
+}
+.service-card:hover h3,
+.service-card:hover p {
+  color: #fff;
+}
+.service-card:hover .service-icon {
+  background: #ab0d26;
+  color: #fff;
+}
+.service-card:first-child:hover {
+  background: #fff;
+  color: #ab0d26;
+}
+.service-card:first-child:hover h3,
+.service-card:first-child:hover p {
+  color: #ab0d26;
+}
+.service-card:first-child:hover .service-icon {
+  background: #fff;
+  color: #ab0d26;
+}
+.service-card {
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.service-card:hover {
+  box-shadow: 0 8px 24px #ab0d2633, 0 2px 8px #eee;
+  transform: translateY(-6px) scale(1.03);
+  z-index: 1;
+}
+.service-card:first-child {
+  background: #ab0d26;
+  color: #fff;
+}
+.service-card:first-child h3,
+.service-card:first-child p {
+  color: #fff;
+}
+.service-card:first-child .service-icon {
+  background: none;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .services-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .service-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.services-section {
+  padding: 3rem 0;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,  #f3e2ea 30%, #f3e2ea 100%);
+}
+
+/* rgba(255,255,255,0.18) 0%, */
+
+.services-title {
+  font-family: 'Sora', sans-serif;
+  color: #ab0d26;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  color: #ab0d26;
+  list-style: none;
+  padding: 2rem;
+  font-family: 'Sora', sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    
+  .services-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .services-list {
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-card {
+  max-width: 300px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #eee;
+  padding: 1.5rem;
+}

@@ -1,0 +1,117 @@
+/* --- Footer Styles: Modern, Clean, Project Theme --- */
+.footer-section {
+  background: #ab0d26;
+  color: #fff;
+  padding: 2.5rem 0 1.2rem 0;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  margin-bottom: -0.5rem;
+  box-shadow: none;
+  border: none;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 0 2rem;
+  background: #ab0d26;
+}
+.footer-brand {
+  flex: 1 1 300px;
+  min-width: 220px;
+}
+.footer-logo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-family: 'Sora', sans-serif;
+}
+.footer-desc {
+  color: #eee;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+.footer-links {
+  display: flex;
+  gap: 3rem;
+  flex: 2 1 400px;
+  justify-content: flex-end;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-width: 120px;
+}
+.footer-col h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+}
+.footer-col a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s, font-size 0.2s;
+  font-family: 'Sora', sans-serif;
+}
+.footer-col a:hover {
+  color: #fff;
+  font-size: 1.15rem;
+}
+.footer-socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+.footer-socials a {
+  color: #ab0d26;
+  font-size: 1.7rem;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.6rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #eee;
+}
+.footer-socials a:hover {
+  background: #ab0d26;
+  color: #fff;
+  box-shadow: 0 4px 16px #ab0d2644;
+}
+.footer-bottom {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.98rem;
+  margin-top: 2.2rem;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-brand {
+    text-align: center;
+  }
+}

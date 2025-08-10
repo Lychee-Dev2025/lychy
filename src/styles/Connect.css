@@ -1,0 +1,270 @@
+.connect-section {
+  padding: 3.5rem 0 3rem 0;
+  background: #fff;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  background: linear-gradient(to bottom, #fff 1000%, #ab0d26 100%);
+}
+
+.connect-title {
+  font-family: 'Sora', sans-serif;
+  color: #18171c;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.connect-title .highlight {
+  color: #ab0d26;
+}
+.connect-subtitle {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+}
+
+.connect-container {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.connect-info-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #f2f2f2;
+  padding: 2.2rem 2.2rem 2.2rem 2.2rem;
+  min-width: 400px;
+  max-width: 500px;
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+}
+.connect-info-top {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.connect-info-bottom {
+  margin-top: 2.2rem;
+  padding-top: 0;
+}
+
+.connect-info-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #18171c;
+}
+.connect-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+.connect-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+}
+.connect-info-icon {
+  color: #ab0d26;
+  border-radius: 1.5rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-top: 2px;
+}
+.connect-info-label {
+  font-weight: 600;
+  color: #18171c;
+  font-size: 1.08rem;
+  text-align: left;
+}
+.connect-info-value {
+  color: #888;
+  font-size: 1.08rem;
+  margin-bottom: 0.3rem;
+  text-align: left;
+}
+.connect-info-link {
+  color: #ab0d26;
+  font-size: 0.98rem;
+  text-decoration: none;
+  margin-top: 0.1rem;
+  display: inline-block;
+}
+.connect-info-link:hover {
+  text-decoration: underline;
+}
+.connect-socials-label {
+  font-size: 1.08rem;
+  color: #18171c;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.connect-socials {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.connect-socials a {
+  color: #18171c;
+  font-size: 2.2rem;
+  transition: color 0.2s, background 0.2s;
+  border-radius: 50%;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #eee;
+}
+.connect-socials a:hover {
+  color: #fff;
+  background: #ab0d26;
+}
+
+.connect-form-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #f2f2f2;
+  padding: 2.2rem 2.2rem 2.2rem 2.2rem;
+  min-width: 400px;
+  max-width: 500px;
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.connect-form-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #18171c;
+  margin-bottom: 1.2rem;
+}
+.connect-form-row {
+  display: flex;
+  gap: 1.2rem;
+}
+.connect-form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  gap: 0.4rem;
+}
+.connect-form-group label {
+  color: #18171c;
+  font-size: 1.01rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  text-align: left;
+}
+.connect-form-group input,
+.connect-form-group select,
+.connect-form-group textarea {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1.5px solid #e0e0e0;
+  font-family: 'Sora', sans-serif;
+  font-size: 1rem;
+  background: #fafbfc;
+  transition: border 0.2s;
+  text-align: left;
+}
+.connect-form-group input:focus,
+.connect-form-group select:focus,
+.connect-form-group textarea:focus {
+  border-color: #ab0d26;
+  outline: none;
+}
+.connect-btn {
+  background: #ab0d26;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 0;
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.connect-btn:hover {
+  background: #820a1c;
+}
+.connect-status {
+  margin-top: 0.7rem;
+  color: #ab0d26;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .connect-container {
+    flex-direction: column;
+    gap: 2rem;
+        align-items: center;
+        justify-content: center;
+  }
+  .connect-info-card, .connect-form-card {
+    min-width: 0;
+    max-width: 80%;
+    width: 100%;
+    padding: 2.5rem;
+    padding-left: 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .connect-section {
+    padding: 2.5rem 0 2.5rem 0;
+  }
+  .connect-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .connect-info-card, .connect-form-card {
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  .connect-form-title {
+    text-align: center;
+    width: 100%;
+  }
+  .connect-title {
+    font-size: 1.4rem;
+  }
+  .connect-subtitle {
+    font-size: 1rem;
+  }
+}
