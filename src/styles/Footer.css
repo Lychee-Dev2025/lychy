@@ -1,4 +1,26 @@
 /* --- Footer Styles: Modern, Clean, Project Theme --- */
+/* --- Footer Styles: Modern, Clean, Project Theme --- */
+.footer-section {
+  background: #ab0d26;
+  color: #fff;
+  padding: 2.5rem 0 1.2rem 0;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  margin-bottom: -0.5rem;
+  box-shadow: none;
+  border: none;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 0 2rem;
+  background: #ab0d26;
+}
 .footer-socials a,
 .footer-socials .social-link {
   color: #ab0d26;
