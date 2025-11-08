@@ -52,7 +52,7 @@ const Connect = () => {
                 </div>
                 <div>
                   <div className="connect-info-label">Phone</div>
-                  <div className="connect-info-value">+351 920 263 975</div>
+                  <div className="connect-info-value">+351 928 343 141</div>
                   <div className="connect-info-value">+92 309 8752218</div>
                 </div>
               </div>

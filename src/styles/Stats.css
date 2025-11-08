@@ -1,6 +1,5 @@
 .stats-section {
   padding: 2rem 1.5rem;
-  background: linear-gradient(to bottom, #f3e2ea 30%, #fff 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +10,7 @@
 
 .stats-glass-bg {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   background: linear-gradient(rgba(185, 39, 61, 0.827), rgba(185, 39, 61, 0.712)), url('../assets/red.png') center/cover no-repeat;
   border-radius: 2rem;

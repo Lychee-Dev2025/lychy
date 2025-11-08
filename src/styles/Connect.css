@@ -32,6 +32,8 @@
   margin: 0 auto;
   align-items: stretch;
   justify-content: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .connect-info-card {
@@ -39,8 +41,6 @@
   border-radius: 18px;
   box-shadow: 0 2px 16px #f2f2f2;
   padding: 2.2rem 2.2rem 2.2rem 2.2rem;
-  min-width: 400px;
-  max-width: 500px;
   flex: 1 1 450px;
   display: flex;
   flex-direction: column;
@@ -84,18 +84,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-top: 2px;
 }
 .connect-info-label {
   font-weight: 600;
   color: #18171c;
-  font-size: 1.08rem;
+  font-size: 1.0rem;
   text-align: left;
 }
 .connect-info-value {
   color: #888;
-  font-size: 1.08rem;
+  font-size: 1rem;
   margin-bottom: 0.3rem;
   text-align: left;
 }
@@ -125,7 +125,7 @@
 }
 .connect-socials a {
   color: #18171c;
-  font-size: 2.2rem;
+  font-size: 1.3rem;
   transition: color 0.2s, background 0.2s;
   border-radius: 50%;
   padding: 0.6rem;
@@ -239,22 +239,20 @@
 
 @media (max-width: 600px) {
   .connect-section {
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 2rem 0 2rem 0;
   }
   .connect-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    padding-left: 1rem;  /* Reduced left padding */
+    padding-right: 1rem;
   }
-  .connect-info-card, .connect-form-card {
-    padding: 1.2rem 0.7rem 1rem 0.7rem;
-    margin-left: auto;
-    margin-right: auto;
+  .connect-info-card {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
     box-sizing: border-box;
   }
   .connect-form-title {
@@ -266,5 +264,11 @@
   }
   .connect-subtitle {
     font-size: 1rem;
+  }
+  .connect-form-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
   }
 }

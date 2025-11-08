@@ -163,7 +163,7 @@
 .project-glass-title {
   font-size: 1.35rem;
   font-weight: 700;
-  color: #222;
+  color: #64240c;
   margin-bottom: 0.5rem;
   text-align: left;
   width: 100%;
@@ -179,7 +179,7 @@
 
 .project-glass-desc {
   font-size: 0.98rem;
-  color: #444;
+  color: #64240c;
   margin-bottom: 1.5rem;
   font-weight: 400;
   text-align: left;
@@ -283,7 +283,7 @@
 }
 
 .project-desc-left p {
-  color: #ab0d26;
+  color: #64240c;
   font-size: 1.1rem;
   margin: 0;
   font-weight: 500;
@@ -330,7 +330,7 @@
 
 .project-card-content h3 {
   font-size: 1.2rem;
-  color: #ab0d26;
+  color: #64240c;
   margin-bottom: 0.7rem;
 }
 

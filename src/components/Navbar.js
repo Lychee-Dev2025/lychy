@@ -40,6 +40,7 @@ const Navbar = () => {
       <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <li><a href="#services" className="navbar-link" onClick={e => scrollToSection(e, '#services')}>Services</a></li>
         <li><a href="#projects" className="navbar-link" onClick={e => scrollToSection(e, '#projects')}>Projects</a></li>
+        <li><a href="#about" className="navbar-link" onClick={e => scrollToSection(e, '#about')}>About</a></li>
         <li><a href="#connect" className="navbar-link" onClick={e => scrollToSection(e, '#connect')}>Connect</a></li>
       </ul>
     </nav>

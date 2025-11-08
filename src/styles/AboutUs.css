@@ -1,0 +1,106 @@
+/* About Us Section Styles */
+/* ...existing code... */
+
+@media (max-width: 700px) {
+  .about-us-svg-wrap {
+    display: none;
+  }
+}
+/* About Us Section Styles */
+.about-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 0 2.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.about-us-main-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #ab0d26;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  letter-spacing: -1px;
+}
+
+.about-us-container {
+  max-width: 1000px;
+  border-radius: 1.5rem;
+  padding: 40px 32px;
+  margin: 0 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+  background: #fff;
+  box-shadow: 0 2px 16px #f2f2f2;
+}
+
+.about-us-svg-wrap {
+  flex: 0 0 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
+  max-width: 260px;
+}
+
+.about-us-svg {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  min-width: 120px;
+  display: block;
+  border-radius: 1.5rem;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.about-us-text {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 0;
+  text-align: left;
+}
+
+.about-us-text p {
+  font-size: 1rem;
+  color: #64240c;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .about-us-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+  }
+  .about-us-svg-wrap {
+    margin-bottom: 1.5rem;
+    max-width: 180px;
+  }
+  .about-us-text {
+    align-items: center;
+    text-align: center;
+  }
+  .about-us-text p {
+    text-align: center;
+  }
+}
+
+  /* Place this at the end for higher specificity */
+  @media (max-width: 900px) {
+    .about-us-svg-wrap {
+      display: none !important;
+    }
+  }

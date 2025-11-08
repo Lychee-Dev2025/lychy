@@ -41,3 +41,31 @@
     transform: rotate(360deg);
   }
 }
+
+/* CTA button styles used in header */
+.cta-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.btn:active { transform: translateY(1px); }
+
+/* Responsive typography: base font-size scales down on small screens */
+html {
+  /* default base font-size for desktop */
+  font-size: 16px;
+}
+
+/* Use clamp for scalable headings and comfortable scaling */
+.main-header-title {
+  font-size: clamp(1.6rem, 3.4vw, 3rem);
+}
+
+@media (max-width: 700px) {
+  /* reduce overall base font-size on phones */
+  html { font-size: 14px; }
+  .cta-buttons { flex-direction: column; align-items: stretch; }
+  .btn { width: 100%; }
+}
