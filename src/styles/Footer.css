@@ -1,24 +1,28 @@
 /* --- Footer Styles: Modern, Clean, Project Theme --- */
-.footer-section {
+.footer-socials a,
+.footer-socials .social-link {
+  color: #ab0d26;
+  /* fix size so hover doesn't visually shrink the circle */
+  font-size: 1.25rem; /* icon size */
+  background: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 0; /* use explicit width/height instead of padding to keep size consistent */
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 120ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 0;
+  background-clip: padding-box;
+}
+.footer-socials a:hover,
+.footer-socials .social-link:hover {
   background: #ab0d26;
   color: #fff;
-  padding: 2.5rem 0 1.2rem 0;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-  margin-bottom: -0.5rem;
-  box-shadow: none;
-  border: none;
-}
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2.5rem;
-  padding: 0 2rem;
-  background: #ab0d26;
+  box-shadow: 0 4px 16px rgba(171,13,38,0.27);
+  transform: translateY(-2px);
 }
 .footer-brand {
   flex: 1 1 300px;

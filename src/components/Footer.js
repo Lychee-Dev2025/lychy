@@ -29,9 +29,30 @@ const Footer = () => (
         <div className="footer-col">
           <h4>Follow Us</h4>
           <div className="footer-socials">
-            <a href="#" aria-label="GitHub"><FontAwesomeIcon icon={faGithub} /></a>
-            <a href="#" aria-label="LinkedIn"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-            <a href="#" aria-label="Instagram"><FontAwesomeIcon icon={faInstagram} /></a>
+            <button
+              type="button"
+              className="social-link"
+              aria-label="GitHub"
+              onClick={() => window.open('https://github.com/Lychee-Dev2025', '_blank', 'noopener')}
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </button>
+            <button
+              type="button"
+              className="social-link"
+              aria-label="LinkedIn"
+              onClick={() => window.open('https://www.linkedin.com', '_blank', 'noopener')}
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </button>
+            <button
+              type="button"
+              className="social-link"
+              aria-label="Instagram"
+              onClick={() => window.open('https://www.instagram.com', '_blank', 'noopener')}
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </button>
           </div>
         </div>
       </div>

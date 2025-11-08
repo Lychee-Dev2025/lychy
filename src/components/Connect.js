@@ -70,15 +70,30 @@ const Connect = () => {
           <div className="connect-info-bottom">
             <div className="connect-socials-label">Follow Us</div>
             <div className="connect-socials">
-              <a href="#" aria-label="GitHub">
+              <button
+                type="button"
+                className="social-link"
+                aria-label="GitHub"
+                onClick={() => window.open('https://github.com/Lychee-Dev2025', '_blank', 'noopener')}
+              >
                 <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a href="#" aria-label="LinkedIn">
+              </button>
+              <button
+                type="button"
+                className="social-link"
+                aria-label="LinkedIn"
+                onClick={() => window.open('https://www.linkedin.com', '_blank', 'noopener')}
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-              <a href="#" aria-label="Instagram">
+              </button>
+              <button
+                type="button"
+                className="social-link"
+                aria-label="Instagram"
+                onClick={() => window.open('https://www.instagram.com', '_blank', 'noopener')}
+              >
                 <FontAwesomeIcon icon={faInstagram} />
-              </a>
+              </button>
             </div>
           </div>
         </div>
