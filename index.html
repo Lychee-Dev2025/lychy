@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/components/assets/logos/newlychy.png" />
+    <title>Lychy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lychy: {
+                50: '#f0fdff',
+                100: '#d6f9ff',
+                200: '#BEEFFF', // Soft text
+                300: '#9de7ff',
+                400: '#6AE3FF', // Primary Electric Ice
+                500: '#3ddcff',
+                600: '#3FA9C7', // Borders and accents
+                700: '#2d8ca3',
+                800: '#1e6b7d',
+                900: '#134956',
+                950: '#0a2a33',
+              },
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 8s ease-in-out infinite',
+              'float-delayed': 'float 8s ease-in-out 4s infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+                '25%': { transform: 'translate(30px, -30px) scale(1.1)' },
+                '50%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '75%': { transform: 'translate(25px, 35px) scale(1.05)' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+      }
+      html {
+        scroll-padding-top: 100px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 text-slate-900 scroll-smooth">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
