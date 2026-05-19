@@ -1,0 +1,86 @@
+/* GLOBAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-primary: 'Inter', sans-serif;
+
+  --color-primary: #0ECFBB;
+  --gradient-primary: linear-gradient(135deg, #0ECFBB, #3B8FEF);
+  --bg-dark: #0A0F1E;
+  --bg-card: #0D1526;
+  --bg-footer: #070C18;
+  --border-color: rgba(255, 255, 255, 0.07);
+
+  --text-light: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.65);
+  --text-dark: rgba(255, 255, 255, 0.45);
+  --text-primary: var(--text-light);
+  --text-muted-darker: var(--text-dark);
+  --brand-color: var(--color-primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* UTILITY CLASSES */
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 11px;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 6rem 0;
+}

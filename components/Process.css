@@ -1,0 +1,132 @@
+.process-section {
+    padding: 100px 24px;
+    background-color: var(--bg-dark);
+  }
+  
+  .process-header {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .process-section .section-label {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: #0ECFBB;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .process-title {
+    font-size: 44px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  .process-subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 520px;
+    margin: 0 auto 64px;
+  }
+  
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+    position: relative;
+  }
+  
+  .process-step-wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+  }
+  
+  .process-card {
+    position: relative;
+    padding: 32px 24px;
+    border-radius: 16px;
+    background: #0D1526;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .process-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(14, 207, 187, 0.25);
+  }
+  
+  .step-number {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 52px;
+    font-weight: 800;
+    color: rgba(14, 207, 187, 0.1);
+    line-height: 1;
+    user-select: none;
+  }
+  
+  .process-card .icon-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(14, 207, 187, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #0ECFBB;
+  }
+  
+  .step-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+  }
+  
+  .step-description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.7;
+    flex: 1;
+  }
+  
+  .connector-line {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 20px;
+    border-top: 1px dashed rgba(14, 207, 187, 0.2);
+    transform: translateY(-50%);
+  }
+  
+  @media (max-width: 1024px) {
+    .process-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .process-title {
+      font-size: 30px;
+    }
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .connector-line {
+      display: block;
+    }
+  }
+  

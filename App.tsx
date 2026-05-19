@@ -1,33 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import Process from './components/Process';
 import Stats from './components/Stats';
 import Projects from './components/Projects';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
+import CTA from './components/CTA';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
-import ScrollToTop from './components/ScrollToTop';
+import AiChat from './components/AiChat';
+import LychyContactFormModal from './components/LychyContactFormModal';
 
 const App: React.FC = () => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
+  const handleOpenContact = () => setIsContactOpen(true);
+  const handleCloseContact = () => setIsContactOpen(false);
+
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      <CustomCursor />
-      <ScrollToTop />
-      <Navbar />
-      <main className="flex-grow">
-        <Hero />
+    <>
+      <Navbar onOpenContact={handleOpenContact} />
+      <main>
+        <Hero onOpenContact={handleOpenContact} />
         <Services />
+        <Process />
         <Stats />
         <Projects />
         <About />
         <Testimonials />
-        <Contact />
+        <CTA onOpenContact={handleOpenContact} />
       </main>
-      <Footer />
-    </div>
+      <Footer onOpenContact={handleOpenContact} />
+      <AiChat />
+      <LychyContactFormModal isOpen={isContactOpen} onClose={handleCloseContact} />
+    </>
   );
 };
 

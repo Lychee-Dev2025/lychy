@@ -1,0 +1,134 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .navbar-container {
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 9999px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(10, 15, 30, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .navbar-container.scrolled {
+    background: rgba(10, 15, 30, 0.85);
+  }
+  
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  
+  .nav-link {
+    position: relative;
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s;
+    font-size: 16px;
+  }
+  
+  .nav-link:hover {
+    color: white;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .start-project-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    background-color: var(--color-primary);
+    color: var(--bg-dark);
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  
+  .start-project-btn:hover {
+    box-shadow: 0 0 20px rgba(14, 207, 187, 0.4);
+  }
+  
+  .shimmer {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+  }
+  
+  .start-project-btn:hover .shimmer {
+    left: 150%;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+    padding: 0.5rem;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 768px) {
+    .mobile-menu-btn {
+      display: none;
+    }
+  }
+  
+  .mobile-nav {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .mobile-nav .nav-link {
+    font-size: 18px;
+  }
+  
+  .mobile-nav .start-project-btn {
+    margin-top: 1rem;
+  }
+  

@@ -1,0 +1,120 @@
+.projects-section {
+    padding: 6rem 0;
+  }
+  
+  .projects-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    transition: all 0.4s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: rgba(14, 207, 187, 0.3);
+  }
+  
+  .image-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(10, 15, 30, 0.9) 0%, transparent 100%);
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .category-pill {
+    display: inline-block;
+    background: rgba(14, 207, 187, 0.1);
+    color: var(--color-primary);
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 3px 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .project-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-description {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+  
+  .case-study-link {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+  }
+  
+  .project-card:hover .case-study-link {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .view-all-btn-container {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
