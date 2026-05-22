@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, easeOut, type Variants } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Project } from '../types';
 import almehdiImage from './assets/logos/almehdi2.png';
 import novaImage from './assets/logos/nova1.png';
 import freightImage from './assets/logos/freightpower.png';
+import AllProjectsModal from './AllProjectsModal';
 import './Projects.css';
 
 const projects: Project[] = [
@@ -50,6 +51,8 @@ const itemVariants: Variants = {
 };
 
 const Projects: React.FC = () => {
+  const [isAllProjectsOpen, setIsAllProjectsOpen] = useState(false);
+
   return (
     <section id="projects" className="projects-section">
       <div className="container">
@@ -103,11 +106,16 @@ const Projects: React.FC = () => {
         </motion.div>
 
         <div className="view-all-btn-container">
-          <a href="https://www.behance.net/aly-h" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+          <button onClick={() => setIsAllProjectsOpen(true)} className="btn btn-secondary">
             View All Projects
-          </a>
+          </button>
         </div>
       </div>
+      
+      <AllProjectsModal 
+        isOpen={isAllProjectsOpen} 
+        onClose={() => setIsAllProjectsOpen(false)} 
+      />
     </section>
   );
 };
